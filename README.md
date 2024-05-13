@@ -2,6 +2,6 @@
 
 ### Links
 
-- Solution URL: [ solution URL ]()
-- Live Site URL: [ live site URL ]()
+- Solution URL: [ solution URL ](https://github.com/Siddhantkhot/Fylo-data-storage-component/)
+- Live Site URL: [ live site URL ](https://siddhantkhot.github.io/Fylo-data-storage-component/)
 
