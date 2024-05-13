@@ -1,0 +1,206 @@
+:root{
+--Pale-Blue:hsl(243, 100%, 93%);
+--Grayish-Blue: hsl(229, 7%, 55%);
+--Dark-Blue: hsl(228, 56%, 26%);
+--Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box  ;
+}
+html{
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+}
+body{   
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: var(--Very-Dark-Blue);
+    background-image: url(./images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.container{
+    min-width:350px;
+    padding:1rem;
+        position: relative;
+
+}
+.box1{
+    background-color: var(--Dark-Blue);
+    padding: 2rem;
+    border-radius: 15px 5rem 15px  15px;
+}
+.box1 .icon{
+    margin-top: 1.2rem;
+    width:160px;
+    height: 4%;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    margin-left: 1rem;
+}
+.box1 .icon .i1{
+    width:40px;
+    padding:11px;
+    background-color:var(--Very-Dark-Blue);
+    border-radius:8px;
+}
+.box1 .icon .i2{
+    width:40px;
+    padding: 11px;
+    background-color:var(--Very-Dark-Blue);
+    border-radius:8px;
+}
+.box1 .icon .i3{
+    width:40px;
+    padding:8px;
+    background-color:var(--Very-Dark-Blue);
+    border-radius:8px;
+}
+.box2{
+    background-color: var(--Dark-Blue);
+    margin-top: 1rem;
+    border-radius: 15px;
+    min-height: 150px;
+}
+.box2 h1{
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--Grayish-Blue);
+    font-weight: 700;
+    padding-top: 2rem;
+}
+strong{
+    color: rgb(185, 177, 177);
+}
+.progress{
+    width: 85%;
+    height: 18px;
+    padding-top: 1.5rem;
+    margin-left: 2rem;
+    padding:0.15rem;
+    background-color: var(--Very-Dark-Blue);
+    border-radius:15px;
+    border: none;
+
+}
+.bar{
+    width: 75%;
+    height:15px;
+    padding:0.3rem;
+    background:linear-gradient(hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+    border-radius:15px;
+    border:1px solid var(--Very-Dark-Blue);
+    position: relative;
+}
+.bar span{
+    width: 12px;
+    height: 11px;
+    background: #fff;
+    color: #fff;
+    position: absolute;
+    left: 14.4rem;
+    bottom:1px;
+    border-radius:100%;
+}
+.size{
+    font-size: 1.1rem;
+    color: var(--Grayish-Blue);
+    font-weight: 700;
+    padding-top:0.51rem;
+    padding-left: 2rem;
+}
+.size span{
+    padding-left: 13rem;
+}
+.storage{
+    text-align: center;
+    width:150px;
+    min-height: 60px;
+    border-radius: 12px;
+    margin-left: 25%;
+    background: #fff;
+    color: var(--Grayish-Blue);
+    font-weight: 700;
+    position: absolute;
+    bottom:-20px;
+
+}
+.storage strong{
+    font-size: 40px;
+    color:var(--Very-Dark-Blue);
+    font-weight: 700;
+    margin-right: 0.5rem;
+    
+}
+@media only screen and (min-width:750px){
+    body{
+        background-image: url(./images/bg-desktop.png);
+        background-color:var(--Very-Dark-Blue);
+        background-position: bottom;
+        background-size: contain;
+        position: relative;
+    }
+    .container{
+        display: flex;
+        
+    }
+    .box1{
+        position: absolute;
+        left: -22rem;
+        min-width: 80%;
+        bottom: 0rem;
+    }
+    .box2{
+        position: absolute;
+        min-width:175%;
+        min-height:130px;
+        right:-22rem;
+        bottom: 0rem;
+        
+    }
+    .bar span{
+        width: 11px;
+        height: 12px;
+        background: #fff;
+        color: #fff;
+        position: absolute;
+        left: 28.6rem;
+        bottom:1px;
+        border-radius:100%;
+    }
+    .box2 h1{
+        text-align: left;
+        padding-left: 2rem;
+    }
+    .size span{
+        padding-left: 33rem;
+    }
+    .storage{
+        min-height:5rem;
+        position: absolute;
+        right:5rem;
+        z-index:1;
+        bottom: 8rem;
+        border-radius:10px;
+        
+    }
+    .arrow
+    {
+        position: absolute;
+        width: 44px;
+        height: 30px;
+        background:#fff;
+        right:5rem;
+        bottom: 8rem;
+        z-index:0;
+        transform: skew(180deg,41deg);
+        
+    }
+    
+}
